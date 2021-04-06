@@ -6,6 +6,10 @@
     }
     .link{
         color: black;
+        text-decoration: none;
+    }
+    .link:hover{
+        text-decoration: underline;
     }
     #searchbar{
         border-radius: 10%;
@@ -48,9 +52,9 @@
 
 <input type="text" id="searchbar">
 
-<input type="button" id="searchbutton" value="Google Search">
+<input type="button" class="button" id="searchbutton" value="Google Search">
 
-<input type="button" id="random" value="I'm Feeling Lucky">
+<input type="button" class="button" id="random" value="I'm Feeling Lucky">
 
 
 </body>
@@ -58,7 +62,7 @@
 
 <footer id="footer">
 
-<p id="note">Carbon neutral since 2007</p>
+<a class="link" id="note" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
 
 <nav id="footbar">
     <ul>
