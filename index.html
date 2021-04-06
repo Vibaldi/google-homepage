@@ -1,8 +1,11 @@
 <main>
 
     <style>
+
     #titlecard{
-        padding:40%;
+        padding: 150px;
+        display: flex;
+        align-items: center;
     }
     .link{
         color: black;
@@ -12,11 +15,29 @@
         text-decoration: underline;
     }
     #searchbar{
+        width: 35em;
         border-radius: 10%;
     }
+
+    #gmail{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #images{
+        display: flex;
+        justify-content: flex-end;
+    }
     #apps{
+        display: flex;
+        justify-content: flex-end;
         width: 30px;
         height: 30px;
+    }
+
+    #leaf{
+        display: flex;
+        width: 13px;
+        height: 20px;
     }
     #footer{
         background-color: rgb(221, 216, 216);
@@ -25,12 +46,7 @@
     }
     </style>
 
-
-<body>
-
-
 <nav id="toolbar">
-    <ul>
         <a class="link" id="about" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
 
         <a class="link" id="store" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
@@ -38,12 +54,13 @@
         <a class="link" id="gmail" href="https://www.google.com/gmail/about/#">Gmail</a>
 
         <a class="link" id="Images" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-    </ul>
+    
 
     <input type="image" class="toprightlink" id="apps" alt="GSuite Apps Button" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKsdkAHPMkbotdn88hSYPRQxEvycJSEF9LHCgCV9zw4eAw088TkVMhkPxJl5IB-nlXu2Y&usqp=CAU">
 </nav>
 
 
+<body id="body">
 
 
 <img id="titlecard" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
@@ -52,9 +69,10 @@
 
 <input type="text" id="searchbar">
 
-<input type="button" class="button" id="searchbutton" value="Google Search">
-
-<input type="button" class="button" id="random" value="I'm Feeling Lucky">
+<div>
+    <input type="button" class="button" id="searchbutton" value="Google Search">
+    <input type="button" class="button" id="random" value="I'm Feeling Lucky">
+</div>
 
 
 </body>
@@ -62,10 +80,11 @@
 
 <footer id="footer">
 
+<img id="leaf" src="https://uploads-ssl.webflow.com/5a73475f7df8180001148a7f/5cb7983e25973e9ce6afabbb_ImagineAustinIcon.png">
+
 <a class="link" id="note" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
 
 <nav id="footbar">
-    <ul>
         <a class="link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
 
         <a class="link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a> 
@@ -77,9 +96,6 @@
         <a class="link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
 
         <a class="link" href="#">Settings</a>
-
-    </ul>
-
 </nav>
 
 
